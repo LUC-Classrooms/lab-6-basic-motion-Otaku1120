@@ -23,8 +23,12 @@ function draw() {
   ufo(x, y, d, r); // call the ufo() function (see below)
   
   // add code here to change the ship location each frame
-  
-  
+  x++; //add one to the value of x each frame go right big number faster shift if # fixed spot
+  r +=.01 //to the value of r each frame rotate right line 41 big # faster rot r plus
+
+  if(x > width){
+    x = 0 ;
+  }
 }
 
 function ufo(tempX, tempY, tempD, tempR){
